@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta property="og:image" content="https://fearlessjeny.github.io/portfolio/img/preview.jpg">
+   <meta property="og:image:secure_url" content="https://fearlessjeny.github.io/portfolio/img/preview.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   
+   <meta property="og:url" content="https://fearlessjeny.github.io/portfolio/">
+   <meta property="og:type" content="website">
+   <meta property="fb:app_id" content="">
+
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="css/styles.css">
+
+   <title>Responsive pizza website - Bedimcode</title>
+</head>
+
+<body>
+
+
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            <img src="img/logo-pizza.svg" alt="image">
+            Пицца
+         </a>
+
+         <!-- <nav>
+            <a href="index.html">Русский</a> |
+            <a href="indexhe.html">עברית</a>
+         </nav> -->
+
+         <nav class="lang-buttons">
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="he">HE</button>
+         </nav>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#home" class="nav__link active-link">Главная</a>
+               </li>
+               <li>
+                  <a href="#about" class="nav__link">О нас</a>
+               </li>
+               <li>
+                  <a href="#popular" class="nav__link">популярный</a>
+               </li>
+               <li>
+                  <a href="#products" class="nav__link">продукты</a>
+               </li>
+               <li>
+                  <a href="#contact" class="nav__link">контакт</a>
+               </li>
+            </ul>
+
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+         </div>
+
+         <!-- Taggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-fill"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h1 class="home__title">Хрустящие и <br> вкусные пиццы</h1>
+
+               <p class="home__description">
+                  Закажите лучшие пиццы, чтобы утолить голод
+                  и сделать семейные моменты ещё более запоминающимися.
+                  Сделайте заказ прямо сейчас.
+               </p>
+
+               <a href="#products" class="button">Заказать пиццу</a>
+
+               <img src="img/sticker-pizza.svg" alt="image" class="home__sticker-1">
+               <img src="img/sticker-leaf.svg" alt="image" class="home__sticker-2">
+            </div>
+            <div class="home__images">
+               <img src="img/home-pizza.png" alt="image" class="home__pizza">
+               <img src="img/home-board.png" alt="image" class="home__board">
+
+               <img src="img/home-leaf-1.png" alt="image" class="home__ingredient home__leaf-1">
+               <img src="img/home-leaf-2.png" alt="image" class="home__ingredient home__leaf-2">
+               <img src="img/home-pepperoni.png" alt="image" class="home__ingredient home__pepperoni">
+               <img src="img/home-mushroom.png" alt="image" class="home__ingredient home__mushroom">
+               <img src="img/home-olive.png" alt="image" class="home__ingredient home__olive">
+               <img src="img/home-tomato.png" alt="image" class="home__ingredient home__tomato">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">Узнайте больше<br>о нашей истории</h2>
+
+               <p class="about__description">
+                  Секрет успеха — это лучшие ингредиенты,
+                  чтобы создавать ещё более вкусную пиццу.
+                  Сегодня мы стремимся к совершенству,
+                  так же как делаем это уже 15 лет —
+                  с того дня, когда мы открыли первую пиццерию в Лиме, Перу.
+               </p>
+
+               <a href="#popular" class="button">Лучшие пиццы</a>
+
+               <img src="img/sticker-cheese.svg" alt="image" class="about__sticker">
+            </div>
+
+            <img src="img/about-img.png" alt="image" class="about__img">
+         </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+         <div class="popular__container container grid">
+            <div class="popular__data">
+               <h2 class="section__title">Откройте для себя <br> Популярные заказы</h2>
+
+               <p class="popular__description">
+                  Выберите лучшие приготовленные и вкусные блюда.
+                  Мы собрали для вас популярные рецепты со всего мира,
+                  чтобы вы могли выбрать свой любимый.
+               </p>
+            </div>
+
+            <div class="popular__swiper swiper">
+               <img src="img/popular-dish.png" alt="image" class="popular__dish">
+
+               <div class="swiper-wrapper">
+                  <article class="popular__card swiper-slide">
+                     <img src="img/popular-1.png" alt="image" class="popular__img">
+                     <h3 class="popular__title">Пицца «Маргарита»</h3>
+                  </article>
+
+                  <article class="popular__card swiper-slide">
+                     <img src="img/popular-2.png" alt="image" class="popular__img">
+                     <h3 class="popular__title">Пицца с грибами</h3>
+                  </article>
+
+                  <article class="popular__card swiper-slide">
+                     <img src="img/popular-3.png" alt="image" class="popular__img">
+                     <h3 class="popular__title">Пицца «Пепперони»</h3>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== РЕЦЕПТ ====================-->
+      <section class="recipe section">
+         <h2 class="section__title">Свежие и <br> Натуральные ингредиенты</h2>
+
+         <div class="recipe__container container grid">
+            <div class="recipe__list grid">
+
+               <div class="recipe__ingredient">
+                  <img src="img/recipe-flour.png" alt="image" class="recipe__image">
+
+                  <div>
+                     <h3 class="recipe__name">Мука</h3>
+                     <p class="recipe__description">Лучшее зерно с полей для отличной муки.</p>
+                  </div>
+               </div>
+
+               <div class="recipe__ingredient">
+                  <img src="img/recipe-cheese.png" alt="image" class="recipe__image">
+
+                  <div>
+                     <h3 class="recipe__name">Сыр</h3>
+                     <p class="recipe__description">Наслаждайтесь сыром ради здорового будущего.</p>
+                  </div>
+               </div>
+
+               <div class="recipe__ingredient">
+                  <img src="img/recipe-sauces.png" alt="image" class="recipe__image">
+
+                  <div>
+                     <h3 class="recipe__name">Соусы</h3>
+                     <p class="recipe__description">Добавьте немного сальсы в свою жизнь, и она станет вкуснее.</p>
+                  </div>
+               </div>
+
+               <div class="recipe__ingredient">
+                  <img src="img/recipe-tomato.png" alt="image" class="recipe__image">
+
+                  <div>
+                     <h3 class="recipe__name">Овощи</h3>
+                     <p class="recipe__description">Овощи, наполненные природной свежестью и органикой.</p>
+                  </div>
+               </div>
+
+               <div class="recipe__ingredient">
+                  <img src="img/recipe-meat.png" alt="image" class="recipe__image">
+
+                  <div>
+                     <h3 class="recipe__name">Мясо</h3>
+                     <p class="recipe__description">Лучшее свежее мясо для вашего здоровья.</p>
+                  </div>
+               </div>
+            </div>
+
+            <img src="img/recipe-img.png" alt="image" class="recipe__img">
+         </div>
+      </section>
+
+      <!--==================== ПРОДУКТЫ ====================-->
+      <section class="products section" id="products">
+         <h2 class="section__title">Самые <br> востребованные пиццы</h2>
+
+         <div class="products__container container grid">
+            <article class="products__card">
+               <img src="img/product-1.png" alt="image" class="products__img">
+
+               <h3 class="products__name">Вегетарианская <br> пицца</h3>
+               <span class="products__price">₪15</span>
+
+               <button class="products__button">
+                  <i class="ri-shopping-bag-3-fill"></i>
+               </button>
+            </article>
+
+            <article class="products__card">
+               <img src="img/product-2.png" alt="image" class="products__img">
+
+               <h3 class="products__name">Пицца <br> Пепперони</h3>
+               <span class="products__price">₪10</span>
+
+               <button class="products__button">
+                  <i class="ri-shopping-bag-3-fill"></i>
+               </button>
+            </article>
+
+            <article class="products__card">
+               <img src="img/product-3.png" alt="image" class="products__img">
+
+               <h3 class="products__name">Пицца <br> Маргарита</h3>
+               <span class="products__price">₪12</span>
+
+               <button class="products__button">
+                  <i class="ri-shopping-bag-3-fill"></i>
+               </button>
+            </article>
+
+            <article class="products__card">
+               <img src="img/product-4.png" alt="image" class="products__img">
+
+               <h3 class="products__name">Пицца с <br> грибами</h3>
+               <span class="products__price">₪17</span>
+
+               <button class="products__button">
+                  <i class="ri-shopping-bag-3-fill"></i>
+               </button>
+            </article>
+
+            <article class="products__card">
+               <img src="img/product-5.png" alt="image" class="products__img">
+
+               <h3 class="products__name">Итальянская <br> пицца</h3>
+               <span class="products__price">₪10</span>
+
+               <button class="products__button">
+                  <i class="ri-shopping-bag-3-fill"></i>
+               </button>
+            </article>
+
+         </div>
+      </section>
+
+      <!--==================== КОНТАКТЫ ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact__container container grid">
+            <div class="contact__data">
+               <h2 class="section__title">Свяжитесь с нами</h2>
+
+               <div class="contact__info grid">
+                  <div>
+                     <h3 class="contact__title">Напишите нам</h3>
+
+                     <div class="contact__social">
+                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Здравствуйте, нужна дополнительная информация!"
+                           target="_blank" class="contact__social-link">
+                           <i class="ri-whatsapp-fill"></i>
+                        </a>
+                        <a href="https://m.me/bedimcode" target="_blank" class="contact__social-link">
+                           <i class="ri-messenger-fill"></i>
+                        </a>
+                        <a href="https://m.me/bedimcode" target="_blank" class="contact__social-link">
+                           <i class="ri-telegram-2-fill"></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div>
+                     <h3 class="contact__title">Доставка</h3>
+
+                     <address class="contact__address">
+                        +00-987-7654-321 <br>
+                        +11-012345
+                     </address>
+                  </div>
+
+                  <div>
+                     <h3 class="contact__title">Локация</h3>
+
+                     <address class="contact__address">
+                        Лима – Солнечный город – Перу <br>
+                        Av. Moon #4321
+                     </address>
+
+                     <a href="https://maps.app.goo.gl/MAmMDxUBFXBSUzLH7" target="_blank" class="contact__map">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Посмотреть на карте</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="contact__image">
+               <img src="img/contact-img.png" alt="image" class="contact__img">
+            </div>
+
+            <img src="img/sticker-tomato.svg" alt="image" class="contact__stiker-1">
+            <img src="img/sticker-mushroom.svg" alt="image" class="contact__stiker-2">
+            <img src="img/sticker-onion.svg" alt="image" class="contact__stiker-3">
+         </div>
+      </section>
+   </main>
+
+   <!--==================== ФУТЕР  ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <a href="#" class="footer__logo">Пицца</a>
+         <div class="footer__content grid">
+            <div>
+               <h3 class="footer__title">Соцсети</h3>
+
+               <div class="footer__social">
+                  <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-facebook-circle-fill"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-twitter-x-fill"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div>
+               <h3 class="footer__title">Способы оплаты</h3>
+
+               <div class="footer__pay">
+                  <img src="img/footer-card-1.png" alt="image" class="footer__pay-img">
+                  <img src="img/footer-card-2.png" alt="image" class="footer__pay-img">
+                  <img src="img/footer-card-3.png" alt="image" class="footer__pay-img">
+                  <img src="img/footer-card-4.png" alt="image" class="footer__pay-img">
+               </div>
+            </div>
+
+            <div>
+               <h3 class="footer__title">Подписка на скидки</h3>
+
+               <form action="" class="footer__form">
+                  <input type="email" placeholder="Email" class="footer__input">
+                  <button type="submit" class="footer__button button">Подписаться</button>
+               </form>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="footer__policy">
+         <a href="#" class="footer__link">Условия и соглашения</a>
+         <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+
+      <span class="footer__copy">
+         © Все права защищены FearlessJeny
+      </span>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+   <i class="ri-arrow-up-line"></i>
+</a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="js/scrollreveal.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="js/main.js"></script>
+</body>
+
+</html>
